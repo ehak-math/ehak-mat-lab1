@@ -35,7 +35,7 @@ jobs:
         run: npm run coverage
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage-report
+          name: coverage-report-${{ github.run_id }}-${{ github.job }}-${{ matrix.node-version }}
           path: coverage/
