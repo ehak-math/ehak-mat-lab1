@@ -6,6 +6,6 @@ describe('GET /', () => {
   it('should return Hello, CI/CD!', async () => {
     const res = await request(app).get('/');
     expect(res.status).to.equal(200);
-    expect(res.text).to.equal('Hello, Bro!');  // <-- updated
+    expect(res.text).to.equal('Hello, My name is Ehak!');  // <-- updated
   });
 });
